@@ -22,20 +22,13 @@ public class Individual extends TaxPayer{
 	}
 
 	@Override
-	public Double taxesPaid() {
-		if (anualIncome >= 20000.00) {
-			return anualIncome * 0.25;		
+	public Double tax() {
+		if (getAnualIncome() < 20000.00) {
+			return getAnualIncome() * 0.15 - getHealthExpenditures() * 0.5;
 		}
-		if (anualIncome >= 20000.00 && healthExpenditures > 0.0) {
-			return (anualIncome * 0.25) - (healthExpenditures * 0.50);
+		else {
+			return getAnualIncome() * 0.25 - getHealthExpenditures() * 0.5;
 		}
-		if (anualIncome < 20000.00) {
-			return anualIncome * 0.15;
-		}
-		if (anualIncome < 20000.00 && healthExpenditures > 0.0) {
-			return (anualIncome * 0.15) - (healthExpenditures * 0.50);
-		}
-		return null;
 	}
 
 }
