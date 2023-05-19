@@ -35,7 +35,7 @@ public class Individual extends TaxPayer{
 		if (anualIncome < 20000.00 && healthExpenditures > 0.0) {
 			return (anualIncome * 0.15) - (healthExpenditures * 0.50);
 		}
-		return 0.0;
+		return null;
 	}
 
 }
