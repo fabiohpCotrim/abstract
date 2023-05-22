@@ -13,5 +13,14 @@ seguintes:
 renda de 20000.00 em diante pagam 25% de imposto. Se a pessoa teve gastos com saúde, 50%
 destes gastos são abatidos no imposto.
 
-Pessoa jurídica: pessoas jurídicas pagam 16% de imposto. Porém, se a empresa possuir mais de 10
+**Pessoa jurídica**: pessoas jurídicas pagam 16% de imposto. Porém, se a empresa possuir mais de 10
 funcionários, ela paga 14% de imposto. 
+
+### *Abstract methods and classes*
+
+Write a program that reads the data of N tax payers (N being given by the user), which they can be Individuals or legal entities, and then show the amount of tax paid by each one, as well as the total tax collected.
+Individual data are: name, anual income and health expenditures. Company data are name, anual income and number of employees. The tax calculation rules are as follows: 
+
+**Individual entity**: People who had income below 20000.00 pay up to 15% tax. People whose income was over 20000.00, must pay 25% tax. Should the individual had health expenditures, 50% of those expenses  must be deducted from the tax paid.  
+
+**Legal entity**: companies must pay tax of 16% over their anual income. However, if said company has more than 10 employees, it must pay only 14%. 
